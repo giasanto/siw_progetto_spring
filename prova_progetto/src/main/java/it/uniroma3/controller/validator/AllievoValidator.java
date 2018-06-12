@@ -10,12 +10,12 @@ public class AllievoValidator implements Validator {
 
 	@Override
 	public void validate(Object o, Errors errors) {
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nome", "richiesto");
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "cognome", "richiesto");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email", "richiesto");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "telefono", "richiesto");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "dataNascita", "richiesto");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "luogoNascita", "richiesto");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nome", "required");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "cognome", "required");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email", "required");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "telefono", "required");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "dataNascita", "required");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "luogoNascita", "required");
 	}
 
 	@Override

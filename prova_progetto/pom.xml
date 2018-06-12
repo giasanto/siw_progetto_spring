@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>prova_progetto</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Progetto per corso SIW</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
