@@ -47,7 +47,7 @@ public class AllievoController {
 		this.validator.validate(allievo, bindingResult);
 
 		if(this.allievoService.alreadyExists(allievo)) {
-			model.addAttribute("esiste", "Allievo gia' esistente");
+			model.addAttribute("exists", "Allievo gia' esistente");
 			return "allievoForm";
 		} else {
 			if(!bindingResult.hasErrors()) {

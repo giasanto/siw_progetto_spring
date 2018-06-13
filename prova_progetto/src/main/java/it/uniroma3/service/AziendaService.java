@@ -35,7 +35,7 @@ public class AziendaService {
 			return null;
 	}
 
-	public boolean alreadyExist(Azienda azienda) {
+	public boolean alreadyExists(Azienda azienda) {
 		List<Azienda> aziende= this.aziendaRepository.findByNome(azienda.getNome());
 		if (aziende.size() > 0)
 			return true;

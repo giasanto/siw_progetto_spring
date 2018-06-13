@@ -15,6 +15,6 @@ public class AziendaValidator implements Validator {
 
 	@Override
 	public void validate(Object o, Errors errors) {
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nome", "richiesto");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nome", "required");
 	}
 }

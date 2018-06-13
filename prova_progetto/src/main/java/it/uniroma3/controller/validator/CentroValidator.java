@@ -15,10 +15,10 @@ public class CentroValidator implements Validator {
 
 	@Override
 	public void validate(Object target, Errors errors) {
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nome", "richiesto");
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "indirizzo", "richiesto");
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email", "richiesto");
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "telefono", "richiesto");
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "capienzaMax", "richiesto");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nome", "required");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "indirizzo", "required");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email", "required");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "telefono", "required");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "capienzaMax", "required");
 	}
 }
