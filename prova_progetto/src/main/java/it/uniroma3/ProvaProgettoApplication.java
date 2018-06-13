@@ -1,7 +1,5 @@
 package it.uniroma3;
 
-
-
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +22,17 @@ public class ProvaProgettoApplication {
 
 	@Autowired
 	private AllievoService allievoService;
+	
+	@Autowired
 	private AttivitaService attivitaService;
+	
+	@Autowired
 	private AziendaService aziendaService;
+	
+	@Autowired
 	private CentroService centroService;
+	
+	@Autowired
 	private ResponsabileService responsabileService;
 
 	public static void main(String[] args) {
