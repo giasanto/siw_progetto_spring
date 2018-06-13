@@ -1,5 +1,7 @@
 package it.uniroma3.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,10 +21,10 @@ public class Azienda {
 	private String nome;
 	
 	@OneToMany
-	private Allievo allievo;
+	private List<Allievo> allievi;
 	
 	@OneToMany
-	private Centro Centro;
+	private  List<Centro> centri;
 	
 	@OneToOne
 	private Responsabile responsabile;
