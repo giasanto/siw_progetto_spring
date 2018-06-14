@@ -9,7 +9,7 @@
 		<h4 class="title">Inserisci Nuovo Allievo</h4>
 		<p th:text="${exists}"></p>
 	</div>
-	<form th:action="@{/addAllievo}" method="POST" th:object="${allievo}">
+	<form th:action="@{/allievo}" method="POST" th:object="${allievo}">
 		<table>
 			<tr>
 				<td>Nome:</td>
