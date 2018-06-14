@@ -9,7 +9,7 @@
 		<h4 class="title">Inserisci Nuovo Allievo</h4>
 		<p th:text="${exists}"></p>
 	</div>
-	<form th:action="@{/allievo}" method="POST" th:object="${allievo}">
+	<form th:action="@{/addAllievo}" method="POST" th:object="${allievo}">
 		<table>
 			<tr>
 				<td>Nome:</td>
@@ -24,7 +24,7 @@
 			<tr>
 				<td>Email:</td>
 				<td><input type="text" th:field="*{email}" /></td>
-				<td th:if="${#fields.hasErrors('city')}" th:errors="*{email}"></td>
+				<td th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></td>
 			</tr>
 			<tr>
                 <td>Telefono:</td>

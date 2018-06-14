@@ -1,6 +1,5 @@
 package it.uniroma3.model;
 
-
 import java.util.List;
 
 import javax.persistence.Column;
@@ -9,7 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-
 
 @Entity
 public class Allievo{
@@ -20,7 +18,6 @@ public class Allievo{
 	
 	@Column(nullable=false)
 	private String nome;
-	
 	
 	@Column(nullable=false)
 	private String cognome;
